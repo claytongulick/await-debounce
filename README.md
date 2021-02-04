@@ -25,7 +25,7 @@ The debounce() function resolves to a boolean, indicating whether the function s
 
 ## Usage
 ```javascript
-import debouncer from 'await-debouncer';
+import debounce from 'await-debouncer';
 
 async function onlyDoThisOnceEvery500ms() {
     if(!await debounce("onlyDoThisOnceEvery500ms", 500)) return;
@@ -39,7 +39,7 @@ async function onlyDoThisOnceEvery500ms() {
 There's isn't any reason why this couldn't be used in node, it's just written using es6 module syntax, so you'll want to watch that.
 
 ### Morbid details
-Behind the scenes a doctionary is created with a bunch of setTimeout keys, and a bunch of promises. When debounce() is called, the
+Behind the scenes a dictionary is created with a bunch of setTimeout keys, and a bunch of promises. When debounce() is called, the
 timeout is cleared and reset if it exists, and any previous call's promise is resolved with false, short circuiting the caller.
 
 When the current invocation's timeout is expired, the current promise is resolved with the value true, allowing the caller to proceed.
