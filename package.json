@@ -1,0 +1,22 @@
+{
+  "name": "await-debounce",
+  "version": "1.0.0",
+  "description": "Zero dependency, super simple utility to debounce an async function using await syntax",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/claytongulick/await-debounce.git"
+  },
+  "keywords": [
+    "debounce",
+    "promise",
+    "await",
+    "es6"
+  ],
+  "author": "Clayton Gulick",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/claytongulick/await-debounce/issues"
+  },
+  "homepage": "https://github.com/claytongulick/await-debounce#readme"
+}
