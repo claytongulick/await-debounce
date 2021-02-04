@@ -21,11 +21,11 @@ The second param is the timeout in ms.
 The debounce() function resolves to a boolean, indicating whether the function should proceed or not.
 
 ## Installation
-`npm install --save await-debouncer`
+`npm install --save await-debounce
 
 ## Usage
 ```javascript
-import debounce from 'await-debouncer';
+import debounce from 'await-debounce';
 
 async function onlyDoThisOnceEvery500ms() {
     if(!await debounce("onlyDoThisOnceEvery500ms", 500)) return;
