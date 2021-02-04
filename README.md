@@ -7,7 +7,9 @@ You can't throw a lead brick through github without hitting about 50 debouncers,
 
 So, introducing the simplest debouncer around!
 
+```javascript
 if(!await debounce("some unique name", 500)) return;
+```
 
 That's it.
 
